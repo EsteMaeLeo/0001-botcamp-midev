@@ -32,36 +32,202 @@
 
 <body>
     <!--Web Portfolio-->
-    <h1>Portfolio Leonel Morales SAP ABAP Developer & Full-stack Developer</h1>
+    <header>
 
-    <p>I am System engineer with 14 year of experience in <strong>SAP as an ABAP Developer.</strong></p>
+        <h1>Portfolio Leonel Morales SAP ABAP Developer & Full-stack Developer</h1>
 
-    <h2>Experience</h2>
+        <nav>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="https://www.linkedin.com/in/leonel-morales-abap/" target="_blank" rel="noreferrer">Linkedin</a>
+        </nav>
+    </header>
 
-    <aside>
-        <h3>Technologies</h3>
-        ABAP: Object Oriented Programming, Object Oriented ALV
-        Module Pool programming, classic reports, Function Modules, Bapis
-        Forms like Sapscripts, Smartforms, PDF Forms
-        Enhancements like userexit, customer exit, BADIs
-        Interfaces like ODATA, Idoc, remote RFC
-    </aside>
+    <main>
+        <p>I am System engineer with 14 year of experience in <strong>SAP as an ABAP Developer.</strong></p>
+        <p>ABAP Developer Senior experienced in all project phases using Agile Methodologies.Oriented to design
+            solutions,
+            ability to learn new technologies. I'm oriented to give quality solutions, team work and committed to
+            achieve
+            the goals.
+        </p>
 
-    <ul>
-        <li class="class-item">Freelance - May 2020</li>
-        <li class="class-item">3M - June 2018 - May 2020</li>
-        <li class="class-item">Freelance April 2017 - June 2018</li>
-        <li class="class-item">Fiserv June 2014 - April 2017</li>
-    </ul>
+        <a download href="images/leo.png">
+            <img id="photo-image" width="300" height="300" title="Leonel Morales Picture"
+                alt="Profile Picture of Leonel Morales with the cross arms" src="images/leo.png">
+        </a>
 
-    <img 
-        id="photo-image"
-        width="300"
-        height="300"
-        title="Leonel Morales Picture" 
-        alt="Profile Picture of Leonel Morales with the cross arms"
-        src="images/leo.png">
+        <h2 id="experience">Experience</h2>
 
+        <ul>
+            <li class="class-item">Freelance - May 2020</li>
+            <li class="class-item">3M - June 2018 - May 2020</li>
+            <li class="class-item">Freelance April 2017 - June 2018</li>
+            <li class="class-item">Fiserv June 2014 - April 2017</li>
+        </ul>
+
+        <h2 id="projects">Projects</h2>
+
+        <aside>
+
+            <!--ROLE <div role="alert"></div>-->
+            <header>
+                <h3>Skills</h3>
+            </header>
+            <ol type="1">
+                <li>ABAP: Object Oriented Programming, Object Oriented ALV </li>
+                <li>Module Pool programming, classic reports, Function Modules, Bapis</li>
+                <li>Forms like Sapscripts, Smartforms, PDF Forms</li>
+                <li>Enhancements like userexit, customer exit, BADIs</li>
+                <li>Interfaces like ODATA, Idoc, remote RFC</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>Express.js</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Database Theory</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>Command Line, Git</li>
+            </ol>
+        </aside>
+
+        <section>
+            <article>
+                <header>
+                    <h4>Mass Upload AP</h4>
+                </header>
+                <p>
+                    Developed a BDC program for Accounts Payable. It will upload Vendor Master data from legacy system
+                    to
+                    SAP
+                    Database using FK01 Transaction.
+                </p>
+                <footer>
+                    <small>Technologies: ABAP, BDC</small>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h4>Mass Upload Projects</h4>
+                </header>
+                <p>
+                    Developed mass upload program for projects on SAP PS (Project Systems). It will upload excel file to
+                    SAP
+                    Database using CJ01 Transaction.
+                </p>
+                <footer>
+                    <small>Technologies: ABAP, BADI, BAPI</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h4>Material Master Idoc</h4>
+                </header>
+                <p>
+                    Function Module MASTERIDOC CREATE REQ DEBMAS configured for custom IDOC ZDEBMAS01 copied from
+                    DEBMAS01.
+                </p>
+                <footer>
+                    <small>Technologies: ABAP, Idoc</small>
+                </footer>
+            </article>
+        </section>
+
+    </main>
+
+    <section>
+        <h2>Frenquenty questions</h2>
+        <details>
+            <summary>What studies do you have?</summary>
+            <p>I studied Systems Engineering in the University Latina of Costa Rica
+                and concluded Vanderblit University Web Development Boot Camp</p>
+        </details>
+
+        <details>
+            <summary>What hobbies do you have?</summary>
+            <p>I like going to fitness center, watch soccer, read a book and go to the beach</p>
+        </details>
+
+        <details>
+            <summary>What is your favorite coding language?</summary>
+            <p>actually my favorites coding languages are: ABAP, JavaScript, Java</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <h3>Send me a message and lets get in contact</h3>
+
+        <form method="post" action="/">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label>Name:
+                        <input type="text" name="name" placeholder="John Smith" required>
+                    </label>
+                </div>
+
+                <label>Email:
+                    <input type="email" name="email" placeholder="johnsmith@gmail" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aditional Information</legend>
+                <div>
+                    <label>Phone:
+                        <input type="tel" name="phone" placeholder="+16809998811" required pattern="[0-9]{9}">
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Others</legend>
+
+                <div>
+                    <datalist id="languages">
+                        <option value="ABAP"></option>
+                        <option value="Java"></option>
+                        <option value="Javascript"></option>
+                        <option value="C++"></option>
+                    </datalist>
+                    <label>
+                        What is the programming language for the project?
+                        <input list="languages" name="languages">
+                    </label>
+                </div>
+
+
+                <div>
+                    <label for="why">Reason for contact me</label>
+                    <select name="why" id="why">
+                        <option value="1">Work</option>
+                        <option value="2">Request Quote </option>
+                        <option value="3">More information</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="terms">Agree to the terms?</label>
+                    <input type="checkbox" name="terms" id="terms" required>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Send Contact">
+        </form>
+    </section>
+
+    <footer>
+        Copyright @ 2025 Portfolio Leonel Morales SAP ABAP Developer & Full-stack Developer
+
+        <a href="mailto:leonel22@hmail.com"> Send me an email</a>
+        <a href="tel:+16809998811">Call me</a>
+    </footer>
 </body>
 
 </html>
