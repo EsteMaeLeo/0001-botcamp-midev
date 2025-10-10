@@ -33,10 +33,34 @@
 <body>
     <main>
         <h1>Video controler</h1>
+
+        <button id="show">Show modal</button>
+        
+        <dialog id="dialog">
+            <h1>Dialog window</h1>
+            <p>Native from HTML Tag</p>
+            <button id="hide">Close</button>
+        </dialog>
+        
+        <script>
+            window.show.addEventListener('click',() =>{window.dialog.showModal()})
+
+            window.hide.addEventListener('click',() =>{window.dialog.close()})
+        </script>
+        
+        <br> <br>
         <video loop autoplay muted controls src="https://filesamples.com/samples/video/mp4/sample_1280x720.mp4"></video>
 
-        <img loading="lazy" id="photo-image" width="300" height="300" title="Leonel Morales Picture"
-            alt="Profile Picture of Leonel Morales with the cross arms" src="images/leo.png">
+        <img style="width:100%; aspect-ratio:1024/683;" loading="lazy" id="photo-image" width="300" height="300"
+            title="Leonel Morales Picture" alt="Profile Picture of Leonel Morales with the cross arms"
+            src="images/connected-drive-hub_bmw-idrive-os8-5-1_3to2.webp">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=24vpZq98UCuBFE9j"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
     </main>
 
 </body>
